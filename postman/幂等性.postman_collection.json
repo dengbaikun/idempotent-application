@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "540736d9-fdc1-4afd-a13c-264a7d326704",
+		"name": "幂等性",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9011/worder/selectAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9011/worder/selectAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"worder",
+						"selectAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9011/worder/addOrder2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "1524018126604341248",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"1277901139832082432\",\r\n        \"totalNum\": 1,\r\n        \"payMoney\": 1,\r\n        \"payType\": \"1\",\r\n        \"payTime\": \"2020-05-20T00:00:00.000+0000\",\r\n        \"receiverContact\": \"heima\",\r\n        \"receiverMobile\": \"15666666666\",\r\n        \"receiverAddress\": \"beijing\",\r\n        \"createTime\": \"2020-06-30T09:45:49.000+0000\",\r\n        \"updateTime\": \"2020-06-30T09:45:49.000+0000\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9011/worder/addOrder2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"worder",
+						"addOrder2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9011/worder/genToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9011/worder/genToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"worder",
+						"genToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9122/order/addOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"1277901139832082432\",\r\n        \"totalNum\": 1,\r\n        \"payMoney\": 1,\r\n        \"payType\": \"1\",\r\n        \"payTime\": \"2020-05-20T00:00:00.000+0000\",\r\n        \"receiverContact\": \"heima\",\r\n        \"receiverMobile\": \"15666666666\",\r\n        \"receiverAddress\": \"beijing\",\r\n        \"createTime\": \"2020-06-30T09:45:49.000+0000\",\r\n        \"updateTime\": \"2020-06-30T09:45:49.000+0000\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9122/order/addOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9122",
+					"path": [
+						"order",
+						"addOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9001/order/demo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/order/demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"order",
+						"demo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9001/order/genOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "1524438405818224640",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"1277901139832082432\",\r\n        \"totalNum\": 1,\r\n        \"payMoney\": 1,\r\n        \"payType\": \"1\",\r\n        \"payTime\": \"2020-05-20T00:00:00.000+0000\",\r\n        \"receiverContact\": \"heima\",\r\n        \"receiverMobile\": \"15666666666\",\r\n        \"receiverAddress\": \"beijing\",\r\n        \"createTime\": \"2020-06-30T09:45:49.000+0000\",\r\n        \"updateTime\": \"2020-06-30T09:45:49.000+0000\",\r\n        \"goodsIds\":\"[1271700536000909313]\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/order/genOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"order",
+						"genOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9001/order/genToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/order/genToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"order",
+						"genToken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,10 @@
+server:
+  port: 9122
+spring:
+  application:
+    name: single
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.117.3:3306/idempotent?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
