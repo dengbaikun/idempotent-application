@@ -1,6 +1,6 @@
 package com.dk.web.order;
 
-import com.dk.zookeeper.interceptor.FeignInterceptor;
+import com.dk.redis.interceptor.FeignInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
